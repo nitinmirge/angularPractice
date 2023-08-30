@@ -34,9 +34,9 @@ export class LoginformComponent {
     //  let a =20;
     return 'i live in pune';
   }
-  ngModelChanges(){
-    console.log("this.mySurname",this.mySurname);
-    this.mySurname = 'Bhapkar';
-  }
+  // ngModelChanges(){
+  //   console.log("this.mySurname",this.mySurname);
+  //   this.mySurname = 'mirge';
+  // }
 }
 
