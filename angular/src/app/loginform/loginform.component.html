@@ -28,4 +28,13 @@
 {{items[2]}}
 <!-- data binding - 1.oneway databinding 2.twoway db -->
 <!--One way DB techniques : 1.string Interpollation{{}} 2. property binding []-->
+<!-- property binding -->
+<form>
+  name1: <input type="text" value = "poonam"><br>
+  name2 : <input type="text" [value] = "myName"> <br> <!-- propertyBind: [attribute] -->
+  name3: <input type="text" value = {{myName}}> <br> <!-- Interpollation: {{property}} -->
+  name : <input type="text" [value] = "myName" disabled ><br>
+  name4: <input type="text"  [disabled] = "disableFlag"><br> <!--propertyBinding can handle disable attribute -->
+  name5: <input type="text" disabled = {{disableFlag}}><br> <!--Interpollation can not handle disable attribute -->
+  </form>
 
