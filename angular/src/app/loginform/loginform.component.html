@@ -37,4 +37,9 @@
   name4: <input type="text"  [disabled] = "disableFlag"><br> <!--propertyBinding can handle disable attribute -->
   name5: <input type="text" disabled = {{disableFlag}}><br> <!--Interpollation can not handle disable attribute -->
   </form>
+  <!-- Two way data binding [(ngModel)]-->
+  <h2>Two way data binding</h2><br>
+  name: <input type="text"[(ngModel)]="mySurname"><br>
+  {{mySurname}}
+  <button (click)="ngModelChanges()">button</button>
 
