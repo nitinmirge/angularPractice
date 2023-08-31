@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./adminsignin.component.scss']
 })
 export class AdminsigninComponent {
-  myFeverateColor:string='red'
 
 }

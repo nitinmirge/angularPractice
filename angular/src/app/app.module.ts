@@ -9,6 +9,7 @@ import { StudentloginComponent } from './studentlogin/studentlogin.component';
 import { LandingComponent } from './landing/landing.component';
 import { AdminloginModule } from './adminlogin/adminlogin.module';
 
+
 console.log('app root module');
 
 @NgModule({
@@ -23,6 +24,7 @@ console.log('app root module');
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+
     // AdminloginModule
   ],
   providers: [],

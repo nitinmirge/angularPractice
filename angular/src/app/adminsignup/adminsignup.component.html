@@ -1,0 +1,12 @@
+<h3 class="header">Admin SignUp Form</h3>
+<div class="form-container">
+  <form  #signUp="ngForm" >
+    <label>Name</label><br>
+    <input type="text" name="name" ngModel><br>
+    <label>Mobile No</label><br>
+    <input type="text" name="Mobile" ngModel><br>
+    <label>Creat Password</label><br>
+    <input type="password" name="password" ngModel><br>
+   <button (click)="submit(signUp.value)">Submit</button>
+  </form>
+</div>

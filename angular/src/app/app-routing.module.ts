@@ -12,7 +12,9 @@ const routes: Routes =
 {path:'studentLogin',component:StudentloginComponent},
 {path:'landing',component:LandingComponent},
 //Lazy loading
-{path:'adminLogin',loadChildren: ()=> import('./adminlogin/adminlogin.module').then(module=>module.AdminloginModule)}
+{path:'adminLogin',loadChildren: ()=> import('./adminlogin/adminlogin.module').then(module=>module.AdminloginModule)},
+{ path: 'adminSignup', loadChildren: () => import('./adminsignup/adminsignup.module').then(m => m.AdminsignupModule) },
+
 ];
 
 @NgModule({

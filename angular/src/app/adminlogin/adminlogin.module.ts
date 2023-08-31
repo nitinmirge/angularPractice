@@ -5,13 +5,15 @@ import { AdminloginRoutingModule } from './adminlogin-routing.module';
 import { AdminsigninComponent } from './adminsignin/adminsignin.component';
 import { FormsModule } from '@angular/forms';
 import { AdminlandingComponent } from './adminlanding/adminlanding.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
  console.log('adminLogin module');
 
 @NgModule({
   declarations: [
     AdminsigninComponent,
-    AdminlandingComponent
+    AdminlandingComponent,
+    NotfoundComponent
   ],
   imports: [
     CommonModule,
