@@ -8,7 +8,12 @@ import { Router } from '@angular/router';
 })
 export class LandingComponent {
 
-  constructor(private router:Router){}
+  items = ['poo'+'patil'+50+20,'ppp','ooo',0,8];
+
+  constructor(private router:Router){
+   console.log('item--->',this.items);
+
+  }
 
   routing(myName:string){
     this.router.navigateByUrl('/studentLogin')
@@ -17,5 +22,8 @@ export class LandingComponent {
   }
   navigation(){
     this.router.navigateByUrl('/landing')
+  }
+  lazyLodingRouting(){
+    this.router.navigateByUrl('/adminLogin')
   }
 }

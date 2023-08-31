@@ -2,7 +2,11 @@
 <a routerLink = "loginform" >click here to go on loginform..</a>
 <button routerLink = "studentLogin" >click here </button><br><br>
 
-<button (click)="routing('nitin')">click to navigate</button>
+<button (click)="routing('nitin')">click to navigate</button><br><br>
+<br><br>
+<button routerLink="/adminLogin/adminSignin">Redirect to adminLoginModule</button>
+<br><br>
+<button (click)="lazyLodingRouting()">navigate to adminLoginModule</button>
 
 
-<app-adminsignin></app-adminsignin>
+

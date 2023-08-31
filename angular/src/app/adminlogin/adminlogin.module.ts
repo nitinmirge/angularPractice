@@ -4,12 +4,14 @@ import { CommonModule } from '@angular/common';
 import { AdminloginRoutingModule } from './adminlogin-routing.module';
 import { AdminsigninComponent } from './adminsignin/adminsignin.component';
 import { FormsModule } from '@angular/forms';
+import { AdminlandingComponent } from './adminlanding/adminlanding.component';
 
  console.log('adminLogin module');
 
 @NgModule({
   declarations: [
-    AdminsigninComponent
+    AdminsigninComponent,
+    AdminlandingComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,7 @@ import { FormsModule } from '@angular/forms';
   ],
   exports:
   [
-    AdminsigninComponent
+    //AdminsigninComponent //to eccess in other modules
   ]
 })
 export class AdminloginModule { }

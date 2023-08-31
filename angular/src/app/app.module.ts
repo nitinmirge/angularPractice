@@ -23,7 +23,7 @@ console.log('app root module');
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    AdminloginModule
+    // AdminloginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
