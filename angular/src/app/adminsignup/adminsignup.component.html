@@ -1,12 +1,14 @@
 <h3 class="header">Admin SignUp Form</h3>
 <div class="form-container">
-  <form  #signUp="ngForm" >
+  <form  #signUp="ngForm" autocomplete="off">
     <label>Name</label><br>
-    <input type="text" name="name" ngModel><br>
+    <input type="text" name="name" [(ngModel)]="data.name" required maxlength="5"><br>
     <label>Mobile No</label><br>
-    <input type="text" name="Mobile" ngModel><br>
-    <label>Creat Password</label><br>
-    <input type="password" name="password" ngModel><br>
-   <button (click)="submit(signUp.value)">Submit</button>
+    <input type="text" name="Mobile" [(ngModel)]="data.mobNo"><br><br>
+    <label>Email</label><br><br>
+    <input type="email" [(ngModel)]="data.email" name="email"><br><br>
+    <label>Creat Password</label><br><br>
+    <input type="password" name="password" ngModel maxlength="5"><br><br>
+   <button [disabled]="signUp.invalid" (click)="submit(signUp.value)">Submit</button>
   </form>
 </div>
