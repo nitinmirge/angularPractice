@@ -13,12 +13,19 @@ export class AdminsignupComponent {
     pass: 'nitin$34'
 
   }
-  submit(formData:any){
-  //  console.log('--->',formData.signUp);
+  data2:any
+//   submit(formData?:any){
+//   //  console.log('--->',formData.signUp);
+//   console.log(formData);
+//   this.data=formData;
+//   console.log(this.data);
+// }
+submit(formData? : any){
+  //console.log('-->',formData.signUp);
   console.log(formData);
-  this.data=formData;
+  this.data2 = formData;
   console.log(this.data);
 
+}
 
-  }
 }
