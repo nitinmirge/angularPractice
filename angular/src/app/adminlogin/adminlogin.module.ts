@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AdminloginRoutingModule } from './adminlogin-routing.module';
 import { AdminsigninComponent } from './adminsignin/adminsignin.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminlandingComponent } from './adminlanding/adminlanding.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 
@@ -18,7 +18,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
   imports: [
     CommonModule,
     AdminloginRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports:
   [
