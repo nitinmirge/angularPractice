@@ -9,7 +9,7 @@ import { FormGroup,FormBuilder,Validators,FormControl } from '@angular/forms';
 export class AdminsigninComponent {
   studentDataForm!:FormGroup; //form declaration
   studentData : any = {
-    name:'pooja',
+    name:'nitin',
     id:444,
     address:'jjjj',
   };
@@ -25,7 +25,7 @@ export class AdminsigninComponent {
 
   studentDataFormValidations(){
     this.studentDataForm = this.formBuilder.group({
-      studentName : ['nitin',Validators.required],
+      studentName : [this.studentData.name,[Validators.required,Validators.maxLength(5),this.nameValidation]],
       gender:[],
       mobNo :[''],
       painting:[],
@@ -33,9 +33,16 @@ export class AdminsigninComponent {
       reading:[],
       outing:[],
       temsAndCond:['',[Validators.requiredTrue]],
-      dob:[]
+      dob:['']
     })
    }
+   nameValidation(control:FormControl):any{
+    console.log("control",control.value);//copy
+    let nameValue = control.value;
+    let updateNewValue = nameValue?.toUpperCase();
+    let isInclude = updateNewValue?.isInclude('copy');
+    return isInclude ? {isValid:true} : null;
+    }
    submitFormData(value:any) {
     this.formData = value;
     console.log(value);
