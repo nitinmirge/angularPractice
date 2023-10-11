@@ -25,7 +25,7 @@ export class AdminsigninComponent {
 
   studentDataFormValidations(){
     this.studentDataForm = this.formBuilder.group({
-      studentName : [this.studentData.name,[Validators.required,Validators.maxLength(5),this.nameValidation]],
+      studentName : [this.studentData.name,[Validators.required,Validators.maxLength(5),this.nameValidation,this.whiteSpaceValidator]],
       gender:[],
       mobNo :[''],
       painting:[],
@@ -42,6 +42,11 @@ export class AdminsigninComponent {
     let updateNewValue = nameValue?.toUpperCase();
     let isInclude = updateNewValue?.isInclude('copy');
     return isInclude ? {isValid:true} : null;
+    }
+    whiteSpaceValidator(inpFeildData:FormControl){
+      let nameValue = inpFeildData.value;
+      let trimedValue = nameValue.trim().length > 0;
+      return trimedValue ? null :{whiteSpace : true};
     }
    submitFormData(value:any) {
     this.formData = value;
