@@ -47,6 +47,8 @@
     <span class="error-msg" *ngIf="studentDataForm.get('studentName')?.touched &&
       studentDataForm.get('studentName')?.errors?.['required']">Name is reuired</span>
     <span class="error-msg" *ngIf="studentDataForm.get('studentName')?.errors?.['isValid']">Name is invalid</span>
+    <span class="error-msg" *ngIf="studentDataForm.get('studentName')?.errors?.['whiteSpaces'] && studentDataForm.get('studentName')?.touched">Name is invalid....</span>
+    <span class="error-msg" *ngIf="studentDataForm.get('studentName')?.touched &&
     <span class="error-msg" *ngIf="studentDataForm.get('studentName')?.touched &&
      studentDataForm.get('studentName')?.errors?.['maxlength']">maxlength for name allowed is 5</span>
     <br><br>
