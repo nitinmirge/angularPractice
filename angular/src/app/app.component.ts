@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from './adminsignup/data.service';
 
 @Component({
   selector: 'app-root',
@@ -12,9 +13,16 @@ export class AppComponent {
         middleName:any = 'Abhijit';
         fruit :any;
 
-        constructor(){}
+        constructor(private dataService:DataService){
+          console.log('i am inside constructor');
+          
+        }
 
-
+        ngOnInit(){
+          this.cityName = this.dataService.city;
+          console.log("this.cityName",this.cityName);
+          
+        }
 
         public myFirstFunction(): any{
           console.log('welcome');

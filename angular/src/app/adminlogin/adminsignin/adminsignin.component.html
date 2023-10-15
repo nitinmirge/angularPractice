@@ -37,7 +37,7 @@
 </form>
 </div> -->
 <div>
-  <form [formGroup]="studentDataForm!" class="reactive-form-container">
+  <form [formGroup]="studentDataForm" class="reactive-form-container">
     <label for="">Name</label><br>
     <input type="text" formControlName="studentName"><br>
 
@@ -48,7 +48,6 @@
       studentDataForm.get('studentName')?.errors?.['required']">Name is reuired</span>
     <span class="error-msg" *ngIf="studentDataForm.get('studentName')?.errors?.['isValid']">Name is invalid</span>
     <span class="error-msg" *ngIf="studentDataForm.get('studentName')?.errors?.['whiteSpaces'] && studentDataForm.get('studentName')?.touched">Name is invalid....</span>
-    <span class="error-msg" *ngIf="studentDataForm.get('studentName')?.touched &&
     <span class="error-msg" *ngIf="studentDataForm.get('studentName')?.touched &&
      studentDataForm.get('studentName')?.errors?.['maxlength']">maxlength for name allowed is 5</span>
     <br><br>
@@ -62,15 +61,16 @@
     <input type="radio" formControlName="gender" value="male">Male<br>
     <input type="radio" formControlName="gender" value="female">Female<br><br>
 
-    <label for="">Hobbies</label><br>
-    <input type="checkbox" formControlName="painting">Painting<br>
+    <label>Hobbies</label><br>
+    <!-- <input type="checkbox" formControlName="painting">Painting<br> -->
     <input type="checkbox" formControlName="painting" value="painting">Painting<br>
-    <input type="checkbox" formControlName="dancing">Dancing<br>
-    <input type="checkbox" formControlName="reading">Reading<br>
-    <input type="checkbox" formControlName="outing">Outing<br>
+    <input type="checkbox" formControlName="dancing" value="dancing">Dancing<br>
+    <input type="checkbox" formControlName="reading" value="reading">Reading<br>
+    <input type="checkbox" formControlName="outing" value="outing">Outing<br>
     <input type="checkbox" formControlName="temsAndCond">Please accept terms and conditions <br>
     <input type="date" formControlName="dob">
 
-    <button [disabled]="studentDataForm.invalid" (click)="submitFormData(studentDataForm.value)">Submit</button>
+    <button [disabled]="studentDataForm.invalid" (click)="submitFormData()">Submit</button>
+  
   </form>
 </div>
