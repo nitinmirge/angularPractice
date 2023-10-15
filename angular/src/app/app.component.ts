@@ -19,6 +19,7 @@ export class AppComponent {
         }
 
         ngOnInit(){
+          //geting the city name
           this.cityName = this.dataService.city;
           console.log("this.cityName",this.cityName);
           

@@ -26,9 +26,10 @@ export class AdminsigninComponent {
 
   studentDataFormValidations(){
     this.studentDataForm = this.formBuilder.group({
-      studentName : ['',[Validators.required,Validators.maxLength(5),this.nameValidation,this.whiteSpaceValidator]],
+      studentName : ['',[Validators.required,Validators.maxLength(5),this.dataService.nameValidation,this.dataService.whiteSpaceValidator]],
       gender:[''],
       mobNo :[''],
+      cityName:[''],
       painting:[''],
       dancing:[''],
       reading:[''],
@@ -37,19 +38,7 @@ export class AdminsigninComponent {
       dob:['']
     })
    }
-   //Copy cOpy coPy copy copY
-   nameValidation(control:FormControl):any{
-    console.log("control",control.value);//copy
-    let nameValue = control.value;
-    let updateNewValue = nameValue?.toLowerCase();
-    let isInclude = updateNewValue?.includes('copy','hello','the');
-    return isInclude ? {isValid:true} : null;
-    }
-    whiteSpaceValidator(inpFeildData:FormControl){
-      let nameValue = inpFeildData.value;
-      let trimedValue = nameValue.trim().length > 0;
-      return trimedValue ? null :{whiteSpace : true};
-    }
+
    submitFormData() {
     
     this.formData = this.studentDataForm.value;
@@ -61,6 +50,11 @@ export class AdminsigninComponent {
     let name =  name1.toUpperCase();
     console.log(name);
     // this.dataService.city = "Pune"
+    console.log(this.studentDataForm.value.cityName);
+    //set the city property
+    this.dataService.city = this.studentDataForm.value.cityName;//direct value assigner
+
+    this.dataService.setCityName(this.studentDataForm.value.cityName)//setter method
 
 
    }
