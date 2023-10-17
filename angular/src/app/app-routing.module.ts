@@ -14,6 +14,7 @@ const routes: Routes =
 //Lazy loading
 {path:'adminLogin',loadChildren: ()=> import('./adminlogin/adminlogin.module').then(module=>module.AdminloginModule)},
 { path: 'adminSignup', loadChildren: () => import('./adminsignup/adminsignup.module').then(m => m.AdminsignupModule) },
+{ path: 'directives', loadChildren: () => import('./directives/directives.module').then(m => m.DirectivesModule) },
 
 ];
 
