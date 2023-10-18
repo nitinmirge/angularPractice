@@ -1,34 +1,46 @@
-<p>directives works!</p>
-<!--Component Directives @component
+<div class="main">
+    <p>directives works!</p>
+    <!--Component Directives @component
  Structural Directives *ngIf,*ngFor,*ngSwitch dom element show/hide :ngIf , looping: ngFor ,conditionally show hide :ngSwitch
 Attribute Directives ngStyle,ngClass
 custom directive - ng g directive directive_name-->
-<!-- *ngIf and *ngFor directive -->
-<h2 *ngIf="show_content">I like Mumbai....</h2>
-<p>I Like Mango </p>
-<button (click)="showContent()">click to show h2 tag</button>
-<!-- {{list}} --><br>
-<div *ngIf="gettingMarksOnClick">
-    gettingMarksOnClick--- {{gettingMarksOnClick}}
+    <!-- *ngIf and *ngFor directive -->
+    <h2 *ngIf="show_content">I like Mumbai....</h2>
+    <p>I Like Mango </p>
+    <button (click)="showContent()">click to show h2 tag</button>
+    <!-- {{list}} --><br>
+    <div *ngIf="gettingMarksOnClick">
+        gettingMarksOnClick--- {{gettingMarksOnClick}}
+    </div>
+    gettingMarksOnClick--- {{gettingMarksOnClick}} <br>
+    gettingMarksOnInit--- {{gettingMarksOnInit}}
+    <br>
+    <button (click)="showList()">click to show list</button>
+    <button (click)="hideList()">click toHide list</button>
+    <div *ngIf="show_list">
+        <ul *ngFor="let listIems of list">
+            <li>{{ listIems}}</li>
+        </ul>
+    </div><br>
+    <!-- *ngSwith Directive  -->
+    <button (click)="switchDirective()">click to show color</button>
+    <div [ngSwitch]="color" *ngIf="noColor">
+        <p *ngSwitchCase="'black'">I like {{color}} color</p>
+        <p *ngSwitchCase="'blue'">I like {{color}} color</p>
+        <p *ngSwitchCase="'orange'">I like {{color}} color</p>
+        <p *ngSwitchDefault>I like deafault {{color}} color </p>
+    </div>
+    <!-- ngStyle Directive -->
+    <div [ngStyle]="{'color': textColor === 'blue'? 'blue' : textColor}">I like sea beach</div>
+    <div [ngStyle]="{'font-size': fontSize === '40px' ? '40px' : fontSize}">I like sea beaches</div>
+    <!-- ngClass directive  -->
+    <p class="para">I like Mango</p>
+    <h1 [ngClass]=" firstName ? 'para' : 'para2' ">First name First name First name</h1>  <!--property binding class--> 
+    <h1 [ngClass]=" headerContent1 == 'para' ? 'para' : 'para2'">I like Apple</h1>
+    <!-- applying multiple classes conditionaly-->
+    <h1 [class.para2]="dynamicClass"
+    [class.para]="dynamicClass2 == true" 
+    [class.para3]="dynamicClass3 == true">kkkkkkkkkkk</h1>
+    <h1 [ngClass]="dynamicCls()">popopopo</h1>
+
 </div>
-gettingMarksOnClick--- {{gettingMarksOnClick}} <br>
-gettingMarksOnInit--- {{gettingMarksOnInit}}
-<br>
-<button (click)="showList()">click to show list</button>
-<button (click)="hideList()">click toHide list</button>
-<div *ngIf="show_list">
-    <ul  *ngFor="let listIems of list">
-        <li>{{ listIems}}</li>
-    </ul>
-</div><br>
-<!-- *ngSwith Directive  -->
-<button (click)="switchDirective()">click to show color</button>
-<div [ngSwitch]="color" *ngIf="noColor">
-    <p *ngSwitchCase="'black'">I like {{color}} color</p>
-    <p *ngSwitchCase="'blue'">I like {{color}} color</p>
-    <p *ngSwitchCase="'orange'">I like {{color}} color</p>
-    <p *ngSwitchDefault>I like deafault {{color}} color </p>
-</div>
-<!-- ngStyle Directive -->
-<div [ngStyle]= "{'color': textColor === 'blue'? 'blue' : textColor}">I like sea beach</div>
-<div [ngStyle]="{'font-size': fontSize === '40px' ? '40px' : fontSize}">I like sea beaches</div>
