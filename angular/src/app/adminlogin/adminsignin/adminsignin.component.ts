@@ -16,7 +16,8 @@ export class AdminsigninComponent {
   };
   formData:any;
   fName : string = "Nitin mirge";
-  today: Date = new Date()
+  today: Date = new Date();
+  num = 200;
   constructor(private formBuilder:FormBuilder,private dataService:DataService){
 
   }
