@@ -7,7 +7,8 @@ import { LoginformComponent } from './loginform/loginform.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StudentloginComponent } from './studentlogin/studentlogin.component';
 import { LandingComponent } from './landing/landing.component';
-import { AdminloginModule } from './adminlogin/adminlogin.module';
+
+
 
 
 console.log('app root module');
@@ -18,6 +19,7 @@ console.log('app root module');
     LoginformComponent,
     StudentloginComponent,
     LandingComponent,
+   
 
   ],
   imports: [
@@ -26,7 +28,7 @@ console.log('app root module');
     FormsModule,
     
 
-    // AdminloginModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

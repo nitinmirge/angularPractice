@@ -6,6 +6,7 @@ import { AdminsigninComponent } from './adminsignin/adminsignin.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminlandingComponent } from './adminlanding/adminlanding.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { SharedModule } from '../shared/shared.module';
 
  console.log('adminLogin module');
 
@@ -19,7 +20,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
     CommonModule,
     AdminloginRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule
   ],
   exports:
   [
