@@ -7,6 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminlandingComponent } from './adminlanding/adminlanding.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { SharedModule } from '../shared/shared.module';
+import { NumbersonlyDirective } from './numbersonly.directive';
 
  console.log('adminLogin module');
 
@@ -14,7 +15,8 @@ import { SharedModule } from '../shared/shared.module';
   declarations: [
     AdminsigninComponent,
     AdminlandingComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    NumbersonlyDirective
   ],
   imports: [
     CommonModule,
