@@ -14,4 +14,16 @@ export class ChildComponent {
   dataFromChildToParent(value:any){
     this.childData.emit(value);
   }
+
+  ngOnInit(){
+    console.log('ngOnInit....');
+    
+  }
+
+  ngOnChanges(){
+    console.log('ngOnChanges....');
+    
+  }
+
+ 
 }
