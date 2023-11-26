@@ -10,6 +10,7 @@ import { SharedModule } from '../shared/shared.module';
 import { NumbersonlyDirective } from './numbersonly.directive';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { SubjecttestComponent } from './subjecttest/subjecttest.component';
 
  console.log('adminLogin module');
 
@@ -20,7 +21,8 @@ import { ChildComponent } from './child/child.component';
     NotfoundComponent,
     NumbersonlyDirective,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    SubjecttestComponent
   ],
   imports: [
     CommonModule,
