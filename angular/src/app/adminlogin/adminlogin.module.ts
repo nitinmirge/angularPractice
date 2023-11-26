@@ -8,6 +8,8 @@ import { AdminlandingComponent } from './adminlanding/adminlanding.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { SharedModule } from '../shared/shared.module';
 import { NumbersonlyDirective } from './numbersonly.directive';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
  console.log('adminLogin module');
 
@@ -16,7 +18,9 @@ import { NumbersonlyDirective } from './numbersonly.directive';
     AdminsigninComponent,
     AdminlandingComponent,
     NotfoundComponent,
-    NumbersonlyDirective
+    NumbersonlyDirective,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     CommonModule,
