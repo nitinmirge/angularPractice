@@ -6,6 +6,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { TakelastoperaterComponent } from './takelastoperater/takelastoperater.component';
 import { TakewhileComponent } from './takewhile/takewhile.component';
 import { SkipComponent } from './skip/skip.component';
+import { SkiplastComponent } from './skiplast/skiplast.component';
+import { SkipuntilComponent } from './skipuntil/skipuntil.component';
 
 const routes: Routes = 
 [
@@ -14,7 +16,9 @@ const routes: Routes =
   {path:'takeUntil',component:TakeuntilComponent},
   {path:'takeLast',component:TakelastoperaterComponent},
   {path:'takeWhile',component:TakewhileComponent},
-  {path:'skip',component:SkipComponent}
+  {path:'skip',component:SkipComponent},
+  {path:'skiplast',component:SkiplastComponent},
+  {path:'skipuntil',component:SkipuntilComponent},
 ];
 
 @NgModule({

@@ -8,6 +8,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { TakelastoperaterComponent } from './takelastoperater/takelastoperater.component';
 import { TakewhileComponent } from './takewhile/takewhile.component';
 import { SkipComponent } from './skip/skip.component';
+import { SkiplastComponent } from './skiplast/skiplast.component';
+import { SkipuntilComponent } from './skipuntil/skipuntil.component';
 
 console.log('rxjs module load');
 
@@ -18,7 +20,9 @@ console.log('rxjs module load');
     RxjsComponent,
     TakelastoperaterComponent,
     TakewhileComponent,
-    SkipComponent
+    SkipComponent,
+    SkiplastComponent,
+    SkipuntilComponent
   ],
   imports: [
     CommonModule,
