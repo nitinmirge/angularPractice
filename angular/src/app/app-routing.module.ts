@@ -15,6 +15,8 @@ const routes: Routes =
 {path:'adminLogin',loadChildren: ()=> import('./adminlogin/adminlogin.module').then(module=>module.AdminloginModule)},
 { path: 'adminSignup', loadChildren: () => import('./adminsignup/adminsignup.module').then(m => m.AdminsignupModule) },
 { path: 'directives', loadChildren: () => import('./directives/directives.module').then(m => m.DirectivesModule) },
+{ path: 'API', loadChildren: () => import('./api/api.module').then(m => m.APIModule) },
+{path:'rxjs',loadChildren:() => import('./rxjs/rxjs.module').then(m => m.RxjsModule)}
 
 ];
 
