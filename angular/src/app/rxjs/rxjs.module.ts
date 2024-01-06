@@ -6,6 +6,7 @@ import { TakeoperaterComponent } from './takeoperater/takeoperater.component';
 import { TakeuntilComponent } from './takeuntil/takeuntil.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { TakelastoperaterComponent } from './takelastoperater/takelastoperater.component';
+import { TakewhileComponent } from './takewhile/takewhile.component';
 
 console.log('rxjs module load');
 
@@ -14,7 +15,8 @@ console.log('rxjs module load');
     TakeoperaterComponent,
     TakeuntilComponent,
     RxjsComponent,
-    TakelastoperaterComponent
+    TakelastoperaterComponent,
+    TakewhileComponent
   ],
   imports: [
     CommonModule,
