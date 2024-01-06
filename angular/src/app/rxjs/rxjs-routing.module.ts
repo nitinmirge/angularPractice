@@ -5,6 +5,7 @@ import { TakeuntilComponent } from './takeuntil/takeuntil.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { TakelastoperaterComponent } from './takelastoperater/takelastoperater.component';
 import { TakewhileComponent } from './takewhile/takewhile.component';
+import { SkipComponent } from './skip/skip.component';
 
 const routes: Routes = 
 [
@@ -12,7 +13,8 @@ const routes: Routes =
   {path:'takeOperater',component:TakeoperaterComponent},
   {path:'takeUntil',component:TakeuntilComponent},
   {path:'takeLast',component:TakelastoperaterComponent},
-  {path:'takeWhile',component:TakewhileComponent}
+  {path:'takeWhile',component:TakewhileComponent},
+  {path:'skip',component:SkipComponent}
 ];
 
 @NgModule({
