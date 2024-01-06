@@ -5,6 +5,7 @@ import { RxjsRoutingModule } from './rxjs-routing.module';
 import { TakeoperaterComponent } from './takeoperater/takeoperater.component';
 import { TakeuntilComponent } from './takeuntil/takeuntil.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { TakelastoperaterComponent } from './takelastoperater/takelastoperater.component';
 
 console.log('rxjs module load');
 
@@ -12,7 +13,8 @@ console.log('rxjs module load');
   declarations: [
     TakeoperaterComponent,
     TakeuntilComponent,
-    RxjsComponent
+    RxjsComponent,
+    TakelastoperaterComponent
   ],
   imports: [
     CommonModule,
