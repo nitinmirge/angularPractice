@@ -30,5 +30,6 @@ export class TakeuntilComponent {
   }
   ngOnDestroy():void{
     this.onDestroy$.next(0);
+    this.onDestroy$.complete();
   }
 }
