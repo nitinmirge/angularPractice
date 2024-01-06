@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { interval } from 'rxjs';
-import { skip } from 'rxjs/operators';
+import { skip, take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-skip',
@@ -13,7 +13,7 @@ export class SkipComponent {
   ngOnInit():void{
     const source$ = interval(1000);
 
-    source$.pipe(skip(5)).subscribe(value =>{
+    source$.pipe(skip(5),take(5)).subscribe(value =>{
       console.log(value);
       
     })
