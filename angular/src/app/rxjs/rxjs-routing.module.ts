@@ -21,6 +21,7 @@ import { FromComponent } from './from/from.component';
 import { OfComponent } from './of/of.component';
 import { DelayComponent } from './delay/delay.component';
 import { IntervalComponent } from './interval/interval.component';
+import { TimerComponent } from './timer/timer.component';
 
 const routes: Routes = 
 [
@@ -44,7 +45,8 @@ const routes: Routes =
   {path:'from',component:FromComponent},
   {path:'of',component:OfComponent},
   {path:'delay',component:DelayComponent},
-  {path:'interval',component:IntervalComponent}
+  {path:'interval',component:IntervalComponent},
+  {path:'timer',component:TimerComponent}
 ];
 
 @NgModule({
