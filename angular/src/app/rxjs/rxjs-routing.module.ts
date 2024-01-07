@@ -15,6 +15,7 @@ import { EndwithComponent } from './endwith/endwith.component';
 import { DefaultemptyComponent } from './defaultempty/defaultempty.component';
 import { FirstComponent } from './first/first.component';
 import { MapComponent } from './map/map.component';
+import { MaptoComponent } from './mapto/mapto.component';
 
 const routes: Routes = 
 [
@@ -32,7 +33,8 @@ const routes: Routes =
   {path:'endWith',component:EndwithComponent},
   {path:'defaultEmpty',component:DefaultemptyComponent},
   {path:'first',component:FirstComponent},
-  {path:'map',component:MapComponent}
+  {path:'map',component:MapComponent},
+  {path:'mapTo',component:MaptoComponent}
 ];
 
 @NgModule({

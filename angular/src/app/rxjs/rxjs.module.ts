@@ -17,6 +17,7 @@ import { EndwithComponent } from './endwith/endwith.component';
 import { DefaultemptyComponent } from './defaultempty/defaultempty.component';
 import { FirstComponent } from './first/first.component';
 import { MapComponent } from './map/map.component';
+import { MaptoComponent } from './mapto/mapto.component';
 
 console.log('rxjs module load');
 
@@ -36,7 +37,8 @@ console.log('rxjs module load');
     EndwithComponent,
     DefaultemptyComponent,
     FirstComponent,
-    MapComponent
+    MapComponent,
+    MaptoComponent
   ],
   imports: [
     CommonModule,
