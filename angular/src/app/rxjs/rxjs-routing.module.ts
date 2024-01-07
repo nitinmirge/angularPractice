@@ -9,6 +9,7 @@ import { SkipComponent } from './skip/skip.component';
 import { SkiplastComponent } from './skiplast/skiplast.component';
 import { SkipuntilComponent } from './skipuntil/skipuntil.component';
 import { SkipwhileComponent } from './skipwhile/skipwhile.component';
+import { BufferComponent } from './buffer/buffer.component';
 
 const routes: Routes = 
 [
@@ -20,7 +21,8 @@ const routes: Routes =
   {path:'skip',component:SkipComponent},
   {path:'skiplast',component:SkiplastComponent},
   {path:'skipuntil',component:SkipuntilComponent},
-  {path:'skipWhile',component:SkipwhileComponent}
+  {path:'skipWhile',component:SkipwhileComponent},
+  {path:'buffer',component:BufferComponent}
 ];
 
 @NgModule({

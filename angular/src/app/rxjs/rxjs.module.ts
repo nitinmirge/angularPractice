@@ -11,6 +11,7 @@ import { SkipComponent } from './skip/skip.component';
 import { SkiplastComponent } from './skiplast/skiplast.component';
 import { SkipuntilComponent } from './skipuntil/skipuntil.component';
 import { SkipwhileComponent } from './skipwhile/skipwhile.component';
+import { BufferComponent } from './buffer/buffer.component';
 
 console.log('rxjs module load');
 
@@ -24,7 +25,8 @@ console.log('rxjs module load');
     SkipComponent,
     SkiplastComponent,
     SkipuntilComponent,
-    SkipwhileComponent
+    SkipwhileComponent,
+    BufferComponent
   ],
   imports: [
     CommonModule,
