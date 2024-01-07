@@ -16,6 +16,7 @@ import { DefaultemptyComponent } from './defaultempty/defaultempty.component';
 import { FirstComponent } from './first/first.component';
 import { MapComponent } from './map/map.component';
 import { MaptoComponent } from './mapto/mapto.component';
+import { LastComponent } from './last/last.component';
 
 const routes: Routes = 
 [
@@ -34,7 +35,8 @@ const routes: Routes =
   {path:'defaultEmpty',component:DefaultemptyComponent},
   {path:'first',component:FirstComponent},
   {path:'map',component:MapComponent},
-  {path:'mapTo',component:MaptoComponent}
+  {path:'mapTo',component:MaptoComponent},
+  {path:'last',component:LastComponent}
 ];
 
 @NgModule({
