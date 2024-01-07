@@ -11,6 +11,7 @@ import { SkipuntilComponent } from './skipuntil/skipuntil.component';
 import { SkipwhileComponent } from './skipwhile/skipwhile.component';
 import { BufferComponent } from './buffer/buffer.component';
 import { StartwithComponent } from './startwith/startwith.component';
+import { EndwithComponent } from './endwith/endwith.component';
 
 const routes: Routes = 
 [
@@ -24,7 +25,8 @@ const routes: Routes =
   {path:'skipuntil',component:SkipuntilComponent},
   {path:'skipWhile',component:SkipwhileComponent},
   {path:'buffer',component:BufferComponent},
-  {path:'startWith',component:StartwithComponent}
+  {path:'startWith',component:StartwithComponent},
+  {path:'endWith',component:EndwithComponent}
 ];
 
 @NgModule({

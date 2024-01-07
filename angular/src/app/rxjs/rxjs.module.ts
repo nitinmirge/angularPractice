@@ -13,6 +13,7 @@ import { SkipuntilComponent } from './skipuntil/skipuntil.component';
 import { SkipwhileComponent } from './skipwhile/skipwhile.component';
 import { BufferComponent } from './buffer/buffer.component';
 import { StartwithComponent } from './startwith/startwith.component';
+import { EndwithComponent } from './endwith/endwith.component';
 
 console.log('rxjs module load');
 
@@ -28,7 +29,8 @@ console.log('rxjs module load');
     SkipuntilComponent,
     SkipwhileComponent,
     BufferComponent,
-    StartwithComponent
+    StartwithComponent,
+    EndwithComponent
   ],
   imports: [
     CommonModule,
