@@ -14,6 +14,7 @@ import { SkipwhileComponent } from './skipwhile/skipwhile.component';
 import { BufferComponent } from './buffer/buffer.component';
 import { StartwithComponent } from './startwith/startwith.component';
 import { EndwithComponent } from './endwith/endwith.component';
+import { DefaultemptyComponent } from './defaultempty/defaultempty.component';
 
 console.log('rxjs module load');
 
@@ -30,7 +31,8 @@ console.log('rxjs module load');
     SkipwhileComponent,
     BufferComponent,
     StartwithComponent,
-    EndwithComponent
+    EndwithComponent,
+    DefaultemptyComponent
   ],
   imports: [
     CommonModule,

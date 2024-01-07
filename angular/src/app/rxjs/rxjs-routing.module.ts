@@ -12,6 +12,7 @@ import { SkipwhileComponent } from './skipwhile/skipwhile.component';
 import { BufferComponent } from './buffer/buffer.component';
 import { StartwithComponent } from './startwith/startwith.component';
 import { EndwithComponent } from './endwith/endwith.component';
+import { DefaultemptyComponent } from './defaultempty/defaultempty.component';
 
 const routes: Routes = 
 [
@@ -26,7 +27,8 @@ const routes: Routes =
   {path:'skipWhile',component:SkipwhileComponent},
   {path:'buffer',component:BufferComponent},
   {path:'startWith',component:StartwithComponent},
-  {path:'endWith',component:EndwithComponent}
+  {path:'endWith',component:EndwithComponent},
+  {path:'defaultEmpty',component:DefaultemptyComponent}
 ];
 
 @NgModule({
