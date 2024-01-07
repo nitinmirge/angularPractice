@@ -22,6 +22,7 @@ import { OfComponent } from './of/of.component';
 import { DelayComponent } from './delay/delay.component';
 import { IntervalComponent } from './interval/interval.component';
 import { TimerComponent } from './timer/timer.component';
+import { TimeoutComponent } from './timeout/timeout.component';
 
 const routes: Routes = 
 [
@@ -46,7 +47,8 @@ const routes: Routes =
   {path:'of',component:OfComponent},
   {path:'delay',component:DelayComponent},
   {path:'interval',component:IntervalComponent},
-  {path:'timer',component:TimerComponent}
+  {path:'timer',component:TimerComponent},
+  {path:'timeOut',component:TimeoutComponent}
 ];
 
 @NgModule({
