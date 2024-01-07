@@ -22,6 +22,7 @@ import { LastComponent } from './last/last.component';
 import { FromComponent } from './from/from.component';
 import { OfComponent } from './of/of.component';
 import { DelayComponent } from './delay/delay.component';
+import { IntervalComponent } from './interval/interval.component';
 
 console.log('rxjs module load');
 
@@ -46,7 +47,8 @@ console.log('rxjs module load');
     LastComponent,
     FromComponent,
     OfComponent,
-    DelayComponent
+    DelayComponent,
+    IntervalComponent
   ],
   imports: [
     CommonModule,

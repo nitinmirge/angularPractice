@@ -20,6 +20,7 @@ import { LastComponent } from './last/last.component';
 import { FromComponent } from './from/from.component';
 import { OfComponent } from './of/of.component';
 import { DelayComponent } from './delay/delay.component';
+import { IntervalComponent } from './interval/interval.component';
 
 const routes: Routes = 
 [
@@ -42,7 +43,8 @@ const routes: Routes =
   {path:'last',component:LastComponent},
   {path:'from',component:FromComponent},
   {path:'of',component:OfComponent},
-  {path:'delay',component:DelayComponent}
+  {path:'delay',component:DelayComponent},
+  {path:'interval',component:IntervalComponent}
 ];
 
 @NgModule({
