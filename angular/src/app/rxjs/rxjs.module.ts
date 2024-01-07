@@ -15,6 +15,7 @@ import { BufferComponent } from './buffer/buffer.component';
 import { StartwithComponent } from './startwith/startwith.component';
 import { EndwithComponent } from './endwith/endwith.component';
 import { DefaultemptyComponent } from './defaultempty/defaultempty.component';
+import { FirstComponent } from './first/first.component';
 
 console.log('rxjs module load');
 
@@ -32,7 +33,8 @@ console.log('rxjs module load');
     BufferComponent,
     StartwithComponent,
     EndwithComponent,
-    DefaultemptyComponent
+    DefaultemptyComponent,
+    FirstComponent
   ],
   imports: [
     CommonModule,

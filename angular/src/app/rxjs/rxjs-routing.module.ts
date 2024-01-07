@@ -13,6 +13,7 @@ import { BufferComponent } from './buffer/buffer.component';
 import { StartwithComponent } from './startwith/startwith.component';
 import { EndwithComponent } from './endwith/endwith.component';
 import { DefaultemptyComponent } from './defaultempty/defaultempty.component';
+import { FirstComponent } from './first/first.component';
 
 const routes: Routes = 
 [
@@ -28,7 +29,8 @@ const routes: Routes =
   {path:'buffer',component:BufferComponent},
   {path:'startWith',component:StartwithComponent},
   {path:'endWith',component:EndwithComponent},
-  {path:'defaultEmpty',component:DefaultemptyComponent}
+  {path:'defaultEmpty',component:DefaultemptyComponent},
+  {path:'first',component:FirstComponent}
 ];
 
 @NgModule({
