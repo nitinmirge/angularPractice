@@ -21,6 +21,7 @@ import { MaptoComponent } from './mapto/mapto.component';
 import { LastComponent } from './last/last.component';
 import { FromComponent } from './from/from.component';
 import { OfComponent } from './of/of.component';
+import { DelayComponent } from './delay/delay.component';
 
 console.log('rxjs module load');
 
@@ -44,7 +45,8 @@ console.log('rxjs module load');
     MaptoComponent,
     LastComponent,
     FromComponent,
-    OfComponent
+    OfComponent,
+    DelayComponent
   ],
   imports: [
     CommonModule,
