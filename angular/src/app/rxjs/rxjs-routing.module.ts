@@ -17,6 +17,7 @@ import { FirstComponent } from './first/first.component';
 import { MapComponent } from './map/map.component';
 import { MaptoComponent } from './mapto/mapto.component';
 import { LastComponent } from './last/last.component';
+import { FromComponent } from './from/from.component';
 
 const routes: Routes = 
 [
@@ -36,7 +37,8 @@ const routes: Routes =
   {path:'first',component:FirstComponent},
   {path:'map',component:MapComponent},
   {path:'mapTo',component:MaptoComponent},
-  {path:'last',component:LastComponent}
+  {path:'last',component:LastComponent},
+  {path:'from',component:FromComponent}
 ];
 
 @NgModule({

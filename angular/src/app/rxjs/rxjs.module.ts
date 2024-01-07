@@ -19,6 +19,7 @@ import { FirstComponent } from './first/first.component';
 import { MapComponent } from './map/map.component';
 import { MaptoComponent } from './mapto/mapto.component';
 import { LastComponent } from './last/last.component';
+import { FromComponent } from './from/from.component';
 
 console.log('rxjs module load');
 
@@ -40,7 +41,8 @@ console.log('rxjs module load');
     FirstComponent,
     MapComponent,
     MaptoComponent,
-    LastComponent
+    LastComponent,
+    FromComponent
   ],
   imports: [
     CommonModule,
